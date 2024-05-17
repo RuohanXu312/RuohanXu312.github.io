@@ -1,0 +1,189 @@
+.img1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.img4 {
+    position: absolute;
+    left: 500px;
+    top: 100px;
+}
+
+.img2 {
+    position: absolute;
+    left: 15%;
+    top: 1000px;
+}
+
+.img3 {
+    position: absolute;
+    left: 20px;
+    top: 600px;
+}
+
+.img5 {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.img6 {
+    position: absolute;
+    left: 57%;
+    top: 700px;
+    width: 400px;
+}
+
+@font-face {
+    font-family:'VCO';
+    src: url('VCR_OSD_MONO_1.001.woff');
+}
+
+body{
+    font-family:'VCO';
+}
+
+.title1 {
+    font-size: 150px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+.title1-1 {
+    font-size: 150px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 150;
+    margin: 0;
+}
+
+.title2 {
+    font-size: 70px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 70%;
+}
+
+.title3 {
+    font-size: 70px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    padding: 10px;
+}
+
+.title4 {
+    font-size: 150px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 110%;
+}
+
+.title4-1 {
+    font-size: 150px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 130%;
+}
+
+.line1 {
+    height: 1px;
+    width: 390px;
+    background-color: black;
+    position: absolute;
+    top: 75%;
+    right: 0;
+}
+
+.line2 {
+    height: 350px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 87%;
+    right: 90px;
+}
+
+.line3 {
+    height: 250px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 135%;
+    left: 90px;
+}
+
+.line4 {
+    height: 1px;
+    width: 390px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+}
+
+.line5 {
+    height: 350px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+}
+
+.section2{
+    margin-top: 105%;
+    position: relative;
+}
+
+.wildebeest{
+    width: 50%;
+    height: 600px;
+}
+
+.text1{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    transform: translate(0%, -50%);
+}
+
+.section3{
+    display: flex;
+    margin-top: 5px;
+}
+
+.section3 video {
+    width: 45%;
+margin-left: 10%;
+}
+
+.text2{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text3 {
+    font-size: 50;
+}
+
+.Images{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin-top: 10px;
+}
