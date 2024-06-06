@@ -40,36 +40,31 @@
     src: url('VCR_OSD_MONO_1.001.woff');
 }
 
-@font-face {
-    font-family: 'Arial';
-    src: url(Arial\ Rounded\ MT\ Std\ Bold.woff);
-}
-
-@font-face {
-    font-family:'Sans';
-    src: url(SourceHanSansSC-Regular.woff);
-}
-
 body{
     font-family:'VCO';
+    margin: 0px;
 }
 
 .title1 {
     font-size: 180px;
-    background-color: white;
+    background-color: black;
     position: absolute;
     left: 0;
     top: 0;
     margin: 0;
+    color: white;
+    border-radius: 75px;
 }
 
 .title1-1 {
     font-size: 180px;
-    background-color: white;
+    background-color: black;
     position: absolute;
     left: 0;
     top: 200;
     margin: 0;
+    color: white;
+    border-radius: 75px;
 }
 
 .title2 {
@@ -79,6 +74,7 @@ body{
     left: 0;
     top: 110%;
     z-index: 2;
+    border-radius: 75px;
 }
 
 .title3 {
@@ -89,22 +85,27 @@ body{
     top: 70%;
     width: 450px;
     padding: 10px;
+    border-radius: 75px;
 }
 
 .title4 {
     font-size: 180px;
-    background-color: white;
+    background-color: black;
     position: absolute;
     right: 0;
     top: 110%;
+    color: white;
+    border-radius: 75px;
 }
 
 .title4-1 {
     font-size: 180px;
-    background-color: white;
+    background-color: black;
     position: absolute;
     right: 0;
     top: 133%;
+    color: white;
+    border-radius: 75px;
 }
 
 .round1{
@@ -124,6 +125,7 @@ body{
 
 .section2{
     margin-top: 114%;
+    position: relative;
 }
 
 .filterbubble{
@@ -140,6 +142,14 @@ body{
     border-radius: 100px;
 }
 
+.paragraph1{
+    padding-left: 320px;
+}
+
+.paragraph2{
+   padding-left: 320px;
+}
+
 .David{
     display: flex;
     margin-top: 50px;
@@ -152,7 +162,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 200px;
-    font-family: Arial;
+    font-family: VCO;
     font-size: 22px;
     margin-left: 40px;
 }
@@ -164,7 +174,7 @@ body{
 
 .at{
     text-align: center;
-    font-family: sans-serif;
+    font-family: VCO;
     font-size: 15px;
 }
 
@@ -173,9 +183,18 @@ body{
 }
 
 .section2 p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 0;
     font-size: 20px;
+
+}
+
+.S2bubble{
+    width: 350px;
+    position: absolute;
+    left: 0px;
+    top: 600px;
+    z-index: -1;
 }
 
 .hashtag{
@@ -185,6 +204,8 @@ body{
     white-space: nowrap;
     overflow: hidden;
     margin: 20px 0;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .hashtaginner{
@@ -212,6 +233,43 @@ body{
     align-items: center;
 }
 
+.left div{
+    background-color: black;
+    color: white;
+    padding: 15px 75px;
+    font-size: 50;
+    border-radius: 100px;
+}
+
+.kpop{
+    position: absolute;
+    left: 400px;
+    top: 20px;
+}
+
+.bts{
+    position: absolute;
+    left: 700px;
+    top: 20px;
+}
+
+.VG{
+    position: absolute;
+    top: 400px;
+    left: 0px;
+}
+
+.GTA{
+    position: absolute;
+    top: 550px;
+    left: 100px;
+}
+
+.MC{
+    position: absolute;
+    top: 650px;
+    right: 450px;
+}
 .migration{
     width: 300px;
     height: 300px;
@@ -260,7 +318,7 @@ body{
 }
 
 .text2 {
-    font-size: 56px;
+    font-size: 25px;
     position: absolute;
     left: 0;
     top: 0;
@@ -278,7 +336,7 @@ body{
 
 .bottom{
     position: relative;
-    height: 500px;
+    height: 150px;
 }
 
 .blackalgorithm2{
@@ -296,4 +354,13 @@ body{
     right: 0;
     transform: translate(50%, -50%);
     z-index: -1;
+}
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 10px;
+    background-color: black;
+    color: white;
 }
