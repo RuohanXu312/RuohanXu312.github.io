@@ -1,5 +1,5 @@
 @font-face {
-font-family: 'anglekiss'; /*a name to be used later*/
+font-family: 'angelkiss'; /*a name to be used later*/
 src: url(AngelKiss.woff); /*URL to font*/
 }
 
@@ -18,13 +18,31 @@ font-family: 'decondor R'; /*a name to be used later*/
 src: url('Decondor-Regular.woff'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'decondor B'; /*a name to be used later*/
+    src: url('Decondor\ Black.ttf'); /*URL to font*/
+    }
+
  @font-face {
 font-family: 'GY'; /*a name to be used later*/
 src: url('Gen\ Jyuu\ Gothic\ P\ Heavy.woff'); /*URL to font*/
 }
+
+@font-face {
+    font-family: 'bad'; /*a name to be used later*/
+    src: url('BadRobot3D-vmzA4.woff'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'alibaba'; /*a name to be used later*/
+    src: url('Alibaba-PuHuiTi-Heavy.woff'); /*URL to font*/
+}
+
 body {
     font-size: 0;
     margin: 0;
+    /* max-width: 100vw;
+    overflow: hidden; */
 }
 p {
     margin: 0;
@@ -48,6 +66,7 @@ img {
     /* height: 40px; */
     width: 100%;
     overflow: hidden;
+    font-family:'alibaba' 
 }
 
 .text1 {
@@ -57,6 +76,7 @@ img {
 
 .text p{
     margin: 10px 0px;
+    font-family:'alibaba' ;
 }
 
 @keyframes move{
@@ -70,7 +90,7 @@ img {
 
 .title {
 position: absolute;
-top: 120px;
+top: 200px;
 left: 50%;
 transform: translateX(-50%);
 width: 80%;
@@ -79,7 +99,7 @@ z-index: 9;
 
 .title-text {
     position: absolute;
-    top: 50px;
+    top: 130px;
     left:0px;
     width: 100%;
 }
@@ -97,8 +117,8 @@ z-index: 9;
 }
 
 .section2 p.title1{
-    font-family: 'anglekiss';
-    font-size: 245px;
+    font-family: 'angelkiss';
+    font-size: 180px;
     position: absolute;
     margin-top: 0;
     right: 60px;
@@ -109,10 +129,10 @@ z-index: 9;
     font-family: 'decondor R';
     font-size: 24px;
     position: absolute;
-    margin-top: 10%;
+    margin-top: 7%;
     top: 120px;
     right: 40px;
-    width: 520px;
+    width: 610px;
 }
 
 .section2 p.cir1 {
@@ -158,7 +178,7 @@ line-height: 330px;
     font-size: 140px;
     text-align: center;
     line-height: 250px;
-    z-index: 2;
+    z-index: 5;
     }
 
 .section2 p.cir4 {
@@ -174,15 +194,15 @@ line-height: 330px;
     font-size: 140px;
     text-align: center;
     line-height: 250px;
-    z-index: 2;
+    z-index: 5;
     }
 
 .collage {
   position: absolute;
-  top: 200px;
+  top: 550px;
   left: -300px;
-  width: 1850px;
-  z-index: 1;
+  width: 1500px;
+  z-index: 4;
 }
 
 .section3 {
@@ -200,9 +220,10 @@ position: absolute;
 right: 50px;
 top: 0px;
 border: 20px solid #5EF12D;
-height: 800px;
+height: 740px;
 overflow-y: auto;
 padding: 10px;
+z-index: 5;
 }
 
 .section3 .frame::-webkit-scrollbar {
@@ -215,7 +236,13 @@ padding: 10px;
 color: black;
 }
 
-.section3 .frame .button{
+div.section3 p.ai {
+    font-family: 'bad';
+    /* font-weight: bold; */
+    font-size: 32px;
+}
+
+/* .section3 .frame .button{
     background-color: #5EF12D;
     font-family:'anglekiss';
     font-size: 76px;
@@ -225,7 +252,7 @@ color: black;
     text-align: center;
     width: 200px;
     margin:200px auto 0;
-}
+} */
 
 .section3 .frame .button:hover {
     background-color: #50d324;
@@ -235,7 +262,7 @@ color: black;
     position: absolute;
     top: -8px;
     background-color: #F12D96;
-    font-family: 'anglekiss';
+    font-family: 'angelkiss';
     color: black;
     left: 100px;
     font-size: 179px;
@@ -249,12 +276,12 @@ color: black;
     position: absolute;
     top: 250px;
     background-color: #5EF12D;
-    font-family: 'anglekiss';
+    font-family: 'angelkiss';
     color: black;
     left: 350px;
     font-size: 179px;
     text-align: center;
-    z-index: 2;
+    z-index: 3;
     line-height: 0.8;
     padding: 0 40px;
 }
@@ -263,7 +290,7 @@ color: black;
     position: absolute;
     top: 500px;
     background-color: #F12D96;
-    font-family: 'anglekiss';
+    font-family: 'angelkiss';
     color: black;
     left: 100px;
     font-size: 179px;
@@ -273,16 +300,304 @@ color: black;
     padding: 0 70px;
 }
 
+.leg {
+    position: absolute;
+    top: 2700px;
+    z-index: 2;
+}
+
 .section4 {
     background: rgb(94,241,45);
     background: linear-gradient(0deg, rgba(94,241,45,1) 0%, rgba(223,252,213,1) 80%, rgba(255,255,255,1) 100%);
 width: 100%;
-height: 901px;
+overflow: hidden;
+height: 650px;
+display: flex;
+/* justify-content: center; */
+padding-top: 420px;
+}
+
+.S4text1 {
+    font-size: 36px;
+    font-family: 'decondor DB' ;
+    width: 57%;
+    margin-left: 100px;
+}
+
+.rounds{
+    position: absolute;
+    top: 3000px;
+    right:0;
+    width: 500px;
+    height: fit-content;
+    z-index: 1;
+}
+
+.prediction {
+    width: 55%;
+    position: absolute;
+    top: 4200px;
+    left: 100px;
+    z-index: 5;
+}
+
+.ptitle {
+    font-size: 32px;
+    font-family: 'decondor SB';
+}
+
+.ptext {
+    font-size: 24px;
+    font-family: 'decondor SB';
+    margin-bottom: 40px;
 }
 
 .section5 {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(126,244,87,1) 80%, rgba(93,242,44,1) 100%);
 width: 100%;
+height: 380px;
+}
+
+.Section6 {
+    background: rgb(17,148,203);
+    background: linear-gradient(0deg, rgba(17,148,203,1) 0%, rgba(171,217,237,1) 64%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    height: 715px;
+    position: relative;
+}
+
+.building {
+    position: absolute;
+    top: 4830px;
+    left: 5px;
+    z-index: 2;
+}
+
+.Section7{
+    background: rgb(242,44,150);
+background: linear-gradient(180deg, rgba(242,44,150,1) 0%, rgba(115,211,60,1) 60%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+.Section7 .s7text{
+    font-size: 45px;
+    font-family: 'bad';
+    z-index: 1;
+    position: absolute;
+    top: 230px;
+    width: 650px;
+    left: 100px;
+
+}
+
+.section8 {
+    height: 700px;
+    position: relative;
+}
+
+.section8 .fire{
+    position: absolute;
+    z-index: 1;
+}
+
+.greenscroll {
+    background-color: #5EF12D;  
+    overflow-x: hidden; 
+    z-index: 2;
+    position: absolute;
+    top: 6800px;
+    left: 0;
+    width: 100%;
+}
+
+.greenscroll p {
+    transform: translateX(0);
+    animation: move 10s linear infinite;
+    font-size: 48px;
+    font-family:'decondor DB' ;
+    color: black;
+    white-space: nowrap;
+    padding: 8px;
+}
+
+.Section9{
+background: rgb(242,44,150);
+background: linear-gradient(180deg, rgba(242,44,150,1) 0%, rgba(115,211,60,1) 60%, rgba(255,255,255,1) 100%);
+width: 100%;
+margin-top: -170px;
+height: 700px;
+position: relative;
+display: flex;
+justify-content: space-evenly;
+padding-top: 250px;
+}
+
+.Section9 .T1 p {
+    font-size: 48px;
+    font-family: 'decondor R';
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Section10 {
+    background: rgb(241,45,150);
+background: linear-gradient(0deg, rgba(241,45,150,1) 0%, rgba(95,165,222,1) 60%, rgba(255,255,255,1) 100%);
+width: 100%;
+margin-top: 130px;
+height: 900px;
+position: relative;
+padding-top: 200px;
+}
+
+.Section10 p{
+    font-size: 44px;
+    font-family: 'bad';
+    position: absolute;
+    top: -100px;
+}
+
+.peoplefall {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    left: 5%;
+    
+}
+
+.dreamtitle {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+    z-index: 2;
+}
+
+.Section10 .name1 {
+    font-size: 64px;
+    font-family: 'decondor B' ;
+    position: absolute;
+    top: 300px;
+    z-index: 3;
+    text-align: center;
+    left: 100px;
+    animation: shrink 5s ease-in-out infinite;
+}
+
+
+.Section10 .name2 {
+    font-size: 80px;
+    font-family: 'decondor B' ;
+    position: absolute;
+    top: 650px;
+    z-index: 3;
+    text-align: center;
+    left: 100px;
+    animation: shrink 5s linear 2s infinite;
+}
+
+.Section10 .name3 {
+    font-size: 48px;
+    font-family: 'decondor B' ;
+    position: absolute;
+    top: 1000px;
+    z-index: 3;
+    text-align: center;
+    left: 100px;
+    animation: shrink 5s ease-in-out infinite;
+}
+
+.Section10 .name4 {
+    font-size: 48px;
+    font-family: 'decondor B' ;
+    position: absolute;
+    top: 250px;
+    z-index: 3;
+    text-align: center;
+    right: 100px;
+    animation: shrink 5s ease-in-out 1s infinite;
+}
+
+.Section10 .name5 {
+    font-size: 80px;
+    font-family: 'decondor B' ;
+    position: absolute;
+    top: 650px;
+    z-index: 3;
+    text-align: center;
+    right: 100px;
+    animation: shrink 5s ease-in-out infinite;
+}
+
+.Section10 .name6 {
+    font-size: 48px;
+    font-family: 'decondor B' ;
+    position: absolute;
+    top: 1070px;
+    z-index: 3;
+    text-align: center;
+    right: 100px;
+    animation: shrink 5s ease-in-out 2s infinite;
+}
+
+@keyframes shrink{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    /* 75% {
+        transform:rotate(-5deg) ;
+    } */
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.Section11{
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(95,165,223,1) 40%, rgba(242,44,150,1) 100%);
+width: 100%;
 height: 901px;
+position: relative;
+}
+
+.headboarder {
+    margin-top: 100px;
+}
+
+.quote {
+    font-size: 64px;
+    font-family:'decondor SB';
+    width: 80%;
+    margin: 50px auto 0;
+}
+
+.Zhou {
+    font-size: 48px;
+    font-family:'decondor SB';
+text-align: right;
+margin-right: 12%;
+}
+
+.footer {
+    background-color: rgba(241, 45, 150, 1);
+    color: black;
+    font-size: 40px;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    /* margin: 5px 0; */
+    padding: -2px;
+    /* height: 40px; */
+    width: 100%;
+    overflow: hidden;
+    font-family:'angelkiss';
+    display: flex;
+    justify-content: space-between;
 }
